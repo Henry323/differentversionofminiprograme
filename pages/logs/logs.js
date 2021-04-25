@@ -1,15 +1,43 @@
 // logs.js
-const util = require('../../utils/util.js')
-
+//index.js
+//获取应用实例
+const app = getApp()
+ 
 Page({
   data: {
-    logs: []
+    username: '',
+    password: ''
   },
-  onLoad() {
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
+  //事件处理函数
+  bindViewTap: function() {
+    wx.navigateTo({
+      url: '../logs/logs'
     })
-  }
+  },
+  onShow: function () {
+    // 生命周期函数--监听页面显示
+    wx.hideTabBar({})
+  },
+  onLoad: function () {
+   
+  },
+ 
+ 
+  // 获取输入账号 
+  usernameInput: function (e) {
+    this.setData({
+      username: e.detail.value
+    })
+  },
+ 
+  // 获取输入密码 
+  passwordInput: function (e) {
+    this.setData({
+      password: e.detail.value
+    })
+  },
+ 
+  // 登录处理
+  
 })
+

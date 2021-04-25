@@ -1,4 +1,5 @@
 {
-  "navigationBarTitleText": "查看启动日志",
+  "navigationBarTitleText": "XJTLU login",
+  "navigationBarTextStyle": "black",
   "usingComponents": {}
 }

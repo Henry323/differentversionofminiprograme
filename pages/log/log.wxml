@@ -1,0 +1,11 @@
+<!--pages/log/log.wxml-->
+<view class='indexContext'>
+<view class='text'>
+<navigator url="../log/log"><image class='avatar' src='../img/teacher.png'></image> </navigator>
+
+<text class='teacher'>我是老师 </text>
+
+<navigator open-type="switchTab"  url="../home/home"><image class='avatar' src='../img/student.png'></image></navigator>
+<text class='teacher'>我是学生 </text>
+</view>
+</view>

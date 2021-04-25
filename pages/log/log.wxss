@@ -1,0 +1,30 @@
+/* pages/log/log.wxss */page{
+  
+  height: 100%;
+  background: #f5f5f5;
+}
+.indexContext{
+ /*flex布局  */
+  display: flex;
+ /*纵向布局  */
+  flex-direction: column;
+ /*布局居中  */
+  align-items: center;
+}
+.avatar{
+  width: 320rpx;
+  height: 240rpx;
+  /*圆角图形取一半  */
+  border-radius: 100rpx;
+  margin: 100rpx;
+  border: 0.5rpx solid brown;
+  border-radius: 10rpx;
+ 
+}
+.teacher{
+  margin: 150rpx;
+  font-size: 40rpx;
+  /*字体变粗  */
+  font-weight: bold;
+
+}

@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: 'OFFICE HOUR APPOINTMENT SYSTEM',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -13,6 +13,7 @@ Page({
   },
   // 事件处理函数
   bindViewTap() {
+    
     wx.navigateTo({
       url: '../logs/logs'
     })

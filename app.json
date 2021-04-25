@@ -1,13 +1,52 @@
 {
   "pages":[
+    
     "pages/index/index",
+    "pages/log/log",
+    "pages/home/home",
+    "pages/search/search",
+    "pages/curriculum/curriculum",
+    "pages/mine/mine",
+    
     "pages/logs/logs"
+    
+    
+    
+    
+
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "iconPath": "icon/home1.png",
+      "selectedIconPath": "icon/home.png",
+      "text": "home"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "iconPath": "icon/search1.png",
+      "selectedIconPath": "icon/search.png",
+      "text": "search"
+    },
+    {
+      "pagePath": "pages/curriculum/curriculum",
+      "iconPath": "icon/curiculum1.png",
+      "selectedIconPath": "icon/curiculum.png",
+      "text": "curriculum"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "iconPath": "icon/mine1.png",
+      "selectedIconPath": "icon/mine.png",
+      "text": "mine"
+    }
+  ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
