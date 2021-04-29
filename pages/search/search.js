@@ -1,18 +1,47 @@
+const curriculums = require('./curriculums.js') //引入城市数组
 Page({
-  // 页面的初始数据
   data: {
-    inputShowed: false,  //初始文本框不显示内容
+    hotcity: ["INT102", "CST102", "CST101", "CST107",  ],
+    result: []
   },
-  // 使文本框进入可编辑状态
-  showInput: function () {
+  /**
+   * 搜索城市
+   */
+  bindKeyInput(e) {
+    var city = e.detail.value
+    //如果输入为空，返回
+    if (city == '') {
+      this.setData({
+        result: []
+      })
+      return
+    }
+    var result = []
+    curriculums.curriculums.forEach(item => {
+      item.curriculums.forEach(res => {
+        if (res.curriculums.indexOf(city) == 0) { //使用indexOf()=0 实现是否以...开头
+          result.push({
+            citysName: res.citysName,
+            txt: res.citysName + "," + item.provinceName,
+          })
+        }
+
+      })
+    })
     this.setData({
-      inputShowed: true   //设置文本框可以输入内容
-    });
+      result: result
+    })
   },
-  // 取消搜索
-  hideInput: function () {
-    this.setData({
-      inputShowed: false
-    });
+  /**
+   * 单击结果
+   */
+  onclick(e){
+    var city = e.currentTarget.dataset.city
+    
+    wx.showToast({
+      icon: 'none',
+      title: city,
+    })
   }
-});
+})
+

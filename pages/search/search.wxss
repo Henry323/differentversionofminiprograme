@@ -1,66 +1,63 @@
 /* pages/search/search.wxss */
-.weui-search-bar {
-  position: relative;
-  padding: 8px 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
+.search-box{
+  margin: 32rpx 32rpx 18rpx 32rpx;
+  border-radius: 18rpx;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+  background-color: white;
   display: flex;
-  box-sizing: border-box;
-  background-color: #EFEFF4;
-  border-top: 1rpx solid #D7D6DC;
-  border-bottom: 1rpx solid #D7D6DC;
+  overflow: hidden;
+  align-items: center;
 }
-.weui-icon-search {
-  margin-right: 4px;
-  font-size: inherit;
+.search-box input{
+  flex: 1;
+  padding:18rpx 32rpx;
 }
-.weui-icon-search_in-box {
-  position: absolute;
-  left: 10px;
-  top: 7px;
+.search-box icon{
+  padding: 18rpx 0 18rpx 18rpx;
 }
-.weui-search-bar__text {
-  display: inline-block;
-  font-size: 16px;
+
+.result-box{
+  border-top: gainsboro 1rpx solid;
 }
-.weui-search-bar__form {
-  position: relative;
-  -webkit-box-flex: 1;
-  -webkit-flex: auto;
-          flex: auto;
-  border-radius: 5px;
-  background: #FFFFFF;
-  border: 1rpx solid #E6E6EA;
+.result-item{
+  display: flex;
+  padding: 32rpx;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  border-bottom: gainsboro 1rpx solid;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
 }
-.weui-search-bar__box {
-  position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 100%;
-  box-sizing: border-box;
-  z-index: 1;
+
+.hotcity-title{
+  display: flex;
+  padding: 18rpx 32rpx;
 }
-.weui-search-bar__input {
-  height: 28px;
-  line-height: 28px;
-  font-size: 14px;
+
+.title-icon {
+  width: 10rpx;
+  margin: 12rpx 16rpx 8rpx 0;
+  background-color: #0081ff;
+  border-radius: 50rpx;
 }
-.weui-search-bar__label {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  border-radius: 3px;
+
+.title-txt {
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.hotcity-box{
+  margin: 32rpx;
+  display: grid;
+  grid-template-columns: repeat(3, 218rpx);
+  grid-row-gap: 32rpx;
+  grid-column-gap: 18rpx;
+}
+.hotcity-item{
+  padding: 12rpx 0;
+  border-radius: 8rpx;
   text-align: center;
-  color: #9B9B9B;
-  background: #FFFFFF;
-  line-height: 28px;
-}
-.weui-search-bar__cancel-btn {
-  margin-left: 10px;
-  line-height: 28px;
-  color: #09BB07;
-  white-space: nowrap;
+  color: #333333;
+  background-color: #f0f0f0;
 }

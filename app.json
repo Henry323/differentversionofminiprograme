@@ -8,7 +8,9 @@
     "pages/curriculum/curriculum",
     "pages/mine/mine",
     
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/logs/register",
+    "pages/logs/forgetpassword"
     
     
     
@@ -22,12 +24,7 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/home/home",
-      "iconPath": "icon/home1.png",
-      "selectedIconPath": "icon/home.png",
-      "text": "home"
-    },
+    "list": [
     {
       "pagePath": "pages/search/search",
       "iconPath": "icon/search1.png",

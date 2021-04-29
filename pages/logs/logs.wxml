@@ -16,7 +16,7 @@
  
  <!--密码-->
  <view class="inputView"> 
-  <image class="keyImage" src="../../img/key.png"></image> 
+  <image class="keyImage" src="../img/keys.png"></image> 
   <label class="loginLab">密码</label> 
   <input class="inputText" password="true" placeholder="password" bindinput="passwordInput" /> 
  </view> 
@@ -25,6 +25,9 @@
  <view class="loginBtnView"> 
   <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">登录</button> 
  </view> 
+
+ <navigator url="forgetpassword"><view class="test">忘记密码 </view></navigator>
+ <navigator url="register"><view class="test">注册账号</view></navigator>
  </view> 
 </view>
 

@@ -7,7 +7,7 @@
       {{userInfo.nickName}}
     </view>
   </view>
-  <button class="button" open-type="getUserInfo" wx:if="{{hasUserInfo}}" bindgetuserinfo="doAuthorization"> 微信登录 </button>
+  <navigator url="../logs/logs"><button class="button" open-type="getUserInfo" wx:if="{{hasUserInfo}}" bindgetuserinfo="doAuthorization"> 登录 </button></navigator>
 </view>
  
 <view class="hr"></view>
