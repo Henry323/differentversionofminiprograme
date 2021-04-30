@@ -1,40 +1,32 @@
 page{
-  /*最外面有一层page设置整个高度 和背景  */
+
   height: 100%;
   background: 	#1E90FF;
 }
 .indexContext{
-  /*flex布局  */
 display: flex;
-/*纵向布局  */
 flex-direction: column;
-/*布局居中  */
 align-items: center;
 }
 .avatar{
   width: 320rpx;
   height: 240rpx;
-  /*圆角图形取一半  */
   border-radius: 100rpx;
   margin: 100rpx;
 }
 .userName{
   margin: 100rpx;
   font-size: 40rpx;
-  /*字体变粗  */
   font-weight: bold;
   color: bisque;
 }
 .text{
-  /*设置这个class边框等 里面内容另外设置  */
+
   width: 250rpx;
   height: 80rpx;
-  /*设置里面的字体  */
   font-size: 30rpx;
-  /*实现边框长度颜色  */
   border: 1rpx solid brown;
   border-radius: 10rpx;
-  /*字体居中  */
   text-align: center;
   line-height: 80rpx;
 }

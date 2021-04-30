@@ -7,10 +7,11 @@
     "pages/search/search",
     "pages/curriculum/curriculum",
     "pages/mine/mine",
-    
+    "pages/personalinfor/personalinfor",
     "pages/logs/logs",
     "pages/logs/register",
     "pages/logs/forgetpassword"
+    
     
     
     

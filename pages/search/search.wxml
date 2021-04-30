@@ -1,6 +1,6 @@
 <view class="search-box">
   <icon type="search" size="18" color="#0081ff"></icon>
-  <input bindinput="bindKeyInput" placeholder="输入专业名"></input>
+  <input bindinput="bindKeyInput" placeholder="Enter major name"></input>
 </view>
 
 <view class="result-box">
@@ -11,7 +11,7 @@
 
 <view class="hotcity-title" wx:if="{{result.length==0}}">
   <view class="title-icon"></view>
-  <view class="title-txt">热门课程</view>
+  <view class="title-txt">history</view>
 </view>
 <view class="hotcity-box" wx:if="{{result.length==0}}">
   <view class="hotcity-item" data-city="{{item}}" bindtap="onclick" wx:for="{{hotcity}}" wx:key="index">

@@ -21,8 +21,8 @@ Page({
       item.curriculums.forEach(res => {
         if (res.curriculums.indexOf(city) == 0) { //使用indexOf()=0 实现是否以...开头
           result.push({
-            citysName: res.citysName,
-            txt: res.citysName + "," + item.provinceName,
+            citysName: res.curriculumsName,
+            txt: res.curriculumsName + "," + item.majorName,
           })
         }
 
@@ -36,11 +36,11 @@ Page({
    * 单击结果
    */
   onclick(e){
-    var city = e.currentTarget.dataset.city
+    var city = e.currentTarget.dataset.curriculums
     
     wx.showToast({
       icon: 'none',
-      title: city,
+      title: curriculums,
     })
   }
 })

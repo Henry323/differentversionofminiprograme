@@ -23,11 +23,16 @@
  
  <!--按钮-->
  <view class="loginBtnView"> 
-  <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">登录</button> 
+  <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">LOG IN</button> 
  </view> 
 
- <navigator url="forgetpassword"><view class="test">忘记密码 </view></navigator>
- <navigator url="register"><view class="test">注册账号</view></navigator>
+ <navigator url="forgetpassword">
+   <view class="test">forgetpassword 
+   </view>
+</navigator>
+
+ <navigator url="register">
+   <view class="test">register</view></navigator>
  </view> 
 </view>
 

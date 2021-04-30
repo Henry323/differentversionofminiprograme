@@ -3,9 +3,9 @@
 <view class='text'>
 <navigator url="../log/log"><image class='avatar' src='../img/teacher.png'></image> </navigator>
 
-<text class='teacher'>我是老师 </text>
+<text class='teacher'>I'm a teacher</text>
 
 <navigator open-type="switchTab"  url="../search/search"><image class='avatar' src='../img/student.png'></image></navigator>
-<text class='teacher'>我是学生 </text>
+<text class='teacher'>I'm a student</text>
 </view>
 </view>

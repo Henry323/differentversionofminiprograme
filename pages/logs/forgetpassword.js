@@ -1,14 +1,12 @@
 // pages/logs/forgetpassword.js
 Page({
  
-  /**
-   * 页面的初始数据
-   */
+  
   data: {
-    text: '获取验证码', //按钮文字
-    currentTime: 61, //倒计时
-    disabled: false, //按钮是否禁用
-    phone: '', //获取到的手机栏中的值
+    text: 'Get phonecode', 
+    currentTime: 61, 
+    disabled: false, 
+    phone: '', 
     VerificationCode: '',
     Code: '',
     NewChanges: '',
@@ -51,16 +49,16 @@ Page({
   doGetCode: function () {
     var that = this;
     that.setData({
-      disabled: true, //只要点击了按钮就让按钮禁用 （避免正常情况下多次触发定时器事件）
+      disabled: true, 
       color: '#ccc',
     })
  
 
     var phone = that.data.phone;
-    var currentTime = that.data.currentTime //把手机号跟倒计时值变例成js值
-    var warn = null; //warn为当手机号为空或格式不正确时提示用户的文字，默认为空
+    var currentTime = that.data.currentTime
+    var warn = null; 
     wx.request({
-      url: 'http://localhost:8080/user/reg', //后端判断是否已被注册， 已被注册返回1 ，未被注册返回0
+      url: 'http://localhost:8080/user/reg', 
       method: "POST",
       data: {
         coachid: that.data.phone

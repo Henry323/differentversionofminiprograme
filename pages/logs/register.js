@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    text: '获取验证码', //按钮文字
+    text: 'get phone code', //按钮文字
     currentTime: 61, //倒计时
     disabled: false, //按钮是否禁用
     phone: '', //获取到的手机栏中的值
