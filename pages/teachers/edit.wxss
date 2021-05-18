@@ -1,0 +1,23 @@
+/* pages/teachers/edit.wxss */
+/* pages/personalinfor/edid.wxss */
+/* pages/personalinfor/edid.wxss *//* pages/personalinfor/personalinfor.wxss */
+
+.item{
+  height: 70rpx;
+  background-color: #fff;
+  margin: 20rpx;
+  display: flex;
+  border-radius: 20rpx;
+  }
+  .left{
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+  }
+  .right{
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  color: #ccc;
+  margin-right: 20rpx;
+  }

@@ -1,0 +1,23 @@
+<!--pages/search/officehour.wxml-->
+<view class="choosetime">CURRICULUM CODE:
+  <view class="chosen">{{classname}}</view>
+</view>
+
+<view class="choosetime">
+  <text>CHOOSE TIME：</text>
+ <picker mode="multiSelector" bindchange="bindMultiPickerChange" value="{{multiIndex}}" range="{{datetimeArray}}">
+    <view class="chosen">
+      <text>{{datetimeArray[0][multiIndex[0]]}} {{datetimeArray[1][multiIndex[1]]}}</text>
+    </view>
+  </picker>
+
+</view>
+<view class="teacher">
+  CHOOSE TEACHER：<text>{{teacherInfo.name}}</text>
+</view>
+<view class="canchoose">STATE：<text class="chosen">{{flag===true?"不可选":"可选"}}</text></view>
+
+<view class="submit">
+  <button type="primary" plain  bindtap="submitAppointment">SUBMIT APPOINTMENT</button>
+</view>
+

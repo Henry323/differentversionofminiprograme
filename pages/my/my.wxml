@@ -1,0 +1,83 @@
+<!--pages/my/my.wxml-->
+<!--pages/my/my.wxml-->
+<block wx:if="{{num==0}}">
+<view class="bg" >
+  <view class="head">
+    <view class="headIcon">
+      <image src="{{userInfo.avatarUrl}}" style="width:70px;height:70px;"></image>
+    </view>
+  </view>
+  <navigator url="../logs/logs"><button class="button"> log in </button></navigator>
+</view>
+</block>
+
+<block wx:elif="{{num==1}}">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+</block>
+
+<view class="hr"></view>
+<navigator url="../teacher/searchclass">
+<view class='item'>
+  <view class='title'>publish office hour </view>
+  
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+</navigator>
+
+<view class="line"></view>
+
+<navigator url="../teachers/personainfo">
+<view class='item'>
+  <view class='title'>personal information </view>
+  
+  <view class="detail2">
+    <text> ></text>
+  </view>
+    
+  
+</view>
+</navigator>
+<view class="line"></view>
+ 
+
+ 
+<view class="hr"></view>
+
+
+<view class="line"></view>
+<view class="item" open-type="contact" bindcontact="handleContact">
+  <view class="title">feedback</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class="item">
+  <view class="title">setting</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="hr"></view>
+
+
+

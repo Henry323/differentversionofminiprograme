@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/log/log",
+    "pages/home/home",
+
+    "pages/reservation/reservation",
+    "pages/my/my",
+    "pages/teacherlogs/logs",
+    "pages/teacherlogs/register",
+    "pages/teacherlogs/forgetpassword",
+    "pages/teacher/searchclass",
+    "pages/teacher/publishOH",
+    "pages/teachers/personainfo",
+    "pages/teachers/edit",
+
+    "pages/search/search",
+    "pages/search/officehour",
+    "pages/curriculum/curriculum",
+    "pages/mine/mine",
+    "pages/personalinfor/personalinfor",
+    "pages/personalinfor/edid",
+    "pages/logs/logs",
+    "pages/logs/register",
+    "pages/logs/forgetpassword"
+    
+    
+    
+    
+    
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        
+        "pagePath": "pages/reservation/reservation",
+        "iconPath": "icon/curiculum1.png",
+        "selectedIconPath": "icon/curiculum.png",
+        "text": "reservation"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "icon/mine1.png",
+        "selectedIconPath": "icon/mine.png",
+        "text": "mine"
+      }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
