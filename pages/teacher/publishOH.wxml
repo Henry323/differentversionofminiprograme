@@ -1,0 +1,99 @@
+<!--pages/teacher/publishOH.wxml-->
+<view class="week">
+    <view class="week_left">
+        <view class="week_day">星期一</view>
+    </view>
+    <view class="week_right">
+        <view wx:for="{{lista}}" wx:key="">
+            <view class="week_day">                  
+                <picker name="week1" style="font-size:14px;margin-top:-1px;" mode="time" start="00:00" end="23:59" bindchange="bindTimeChangea" data-idx="{{index}}" value="{{time1[index]}}">
+                    <input type="text" disabled="disabled" placeholder="start" data-idx='{{index}}' value="{{time1[index]}}" class="time"></input>
+                </picker>
+            </view>            
+            <view class="week_day">                  
+                <picker name="weeka" style="font-size:14px;margin-top:-1px;" mode="time" start="00:00" end="23:59" bindchange="bindTimesChangea" data-idx="{{index}}" value="{{times1[index]}}">
+                    <input type="text" disabled="disabled" placeholder="end" data-idx="{{index}}" value="{{times1[index]}}"class="time"></input>
+                </picker>
+             </view>            
+        </view>
+    </view>
+</view>
+
+<view class="week">
+    <view class="week_left">
+        <view class="week_day">星期二</view>
+    </view>
+    <view class="week_right">
+        <view wx:for="{{listb}}" wx:key="">
+            <view class="week_day">                  
+                <picker name="week1" style="font-size:14px;margin-top:-1px;" mode="time" start="00:00" end="23:59" bindchange="bindTimeChangeb" data-idx="{{index}}" value="{{time2[index]}}">
+                    <input type="text" disabled="disabled" placeholder="start" data-idx='{{index}}' value="{{time2[index]}}" class="time"></input>
+                </picker>
+            </view>            
+            <view class="week_day">                  
+                <picker name="week1" style="font-size:14px;margin-top:-1px;" mode="time" start="00:00" end="23:59" bindchange="bindTimesChangeb" data-idx="{{index}}" value="{{times2[index]}}">
+                    <input type="text" disabled="disabled" placeholder="end" data-idx="{{index}}" value="{{times2[index]}}"class="time"></input>
+                </picker>
+             </view>            
+        </view>
+    </view>
+</view>
+<view class="week">
+    <view class="week_left">
+        <view class="week_day">星期三</view>
+    </view>
+    <view class="week_right">
+        <view wx:for="{{listc}}" wx:key="">
+            <view class="week_day">                  
+                <picker name="week1" style="font-size:14px;margin-top:-1px;" mode="time" start="00:00" end="23:59" bindchange="bindTimeChangec" data-idx="{{index}}" value="{{time3[index]}}">
+                    <input type="text" disabled="disabled" placeholder="start" data-idx='{{index}}' value="{{time3[index]}}" class="time"></input>
+                </picker>
+            </view>            
+            <view class="week_day">                  
+                <picker name="week1" style="font-size:14px;margin-top:-1px;" mode="time" start="00:00" end="23:59" bindchange="bindTimesChangec" data-idx="{{index}}" value="{{times3[index]}}">
+                    <input type="text" disabled="disabled" placeholder="end" data-idx="{{index}}" value="{{times3[index]}}"class="time"></input>
+                </picker>
+             </view>            
+        </view>
+    </view>
+</view>
+<view class="week">
+    <view class="week_left">
+        <view class="week_day">星期四</view>
+    </view>
+    <view class="week_right">
+        <view wx:for="{{listd}}" wx:key="">
+            <view class="week_day">                  
+                <picker name="week1" style="font-size:14px;margin-top:-1px;" mode="time" start="00:00" end="23:59" bindchange="bindTimeChanged" data-idx="{{index}}" value="{{time4[index]}}">
+                    <input type="text" disabled="disabled" placeholder="start" data-idx='{{index}}' value="{{time4[index]}}" class="time"></input>
+                </picker>
+            </view>            
+            <view class="week_day">                  
+                <picker name="week1" style="font-size:14px;margin-top:-1px;" mode="time" start="00:00" end="23:59" bindchange="bindTimesChanged" data-idx="{{index}}" value="{{times4[index]}}">
+                    <input type="text" disabled="disabled" placeholder="end" data-idx="{{index}}" value="{{times4[index]}}"class="time"></input>
+                </picker>
+             </view>            
+        </view>
+    </view>
+</view>
+<view class="week">
+    <view class="week_left">
+        <view class="week_day">星期五</view>
+    </view>
+    <view class="week_right">
+        <view wx:for="{{liste}}" wx:key="">
+            <view class="week_day">                  
+                <picker name="week1" style="font-size:14px;margin-top:-1px;" mode="time" start="00:00" end="23:59" bindchange="bindTimeChangee" data-idx="{{index}}" value="{{time5[index]}}">
+                    <input type="text" disabled="disabled" placeholder="start" data-idx='{{index}}' value="{{time5[index]}}" class="time"></input>
+                </picker>
+            </view>            
+            <view class="week_day">                  
+                <picker name="week1" style="font-size:14px;margin-top:-1px;" mode="time" start="00:00" end="23:59" bindchange="bindTimesChangee" data-idx="{{index}}" value="{{times5[index]}}">
+                    <input type="text" disabled="disabled" placeholder="end" data-idx="{{index}}" value="{{times5[index]}}"class="time"></input>
+                </picker>
+             </view>            
+        </view>
+    </view>
+  </view>
+  <navigator url="../finish/finish"><button class="button" open-type="getUserInfo" > submit </button></navigator>
+

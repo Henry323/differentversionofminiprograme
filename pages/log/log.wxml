@@ -1,7 +1,7 @@
 <!--pages/log/log.wxml-->
 <view class='indexContext'>
 <view class='text'>
-<navigator url="../log/log"><image class='avatar' src='../img/teacher.png'></image> </navigator>
+<navigator url="../teacher/publishOH"><image class='avatar' src='../img/teacher.png'></image> </navigator>
 
 <text class='teacher'>I'm a teacher</text>
 

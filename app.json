@@ -4,10 +4,13 @@
     "pages/index/index",
     "pages/log/log",
     "pages/home/home",
+    "pages/teacher/publishOH",
     "pages/search/search",
+    "pages/search/officehour",
     "pages/curriculum/curriculum",
     "pages/mine/mine",
     "pages/personalinfor/personalinfor",
+    "pages/personalinfor/edid",
     "pages/logs/logs",
     "pages/logs/register",
     "pages/logs/forgetpassword"

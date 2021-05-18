@@ -4,8 +4,7 @@
 </view>
 
 <view class="result-box">
-  <view class="result-item" data-city="{{item.citysName}}" bindtap="onclick" wx:for="{{result}}" wx:key="index">
-    {{item.txt}}
+  <view class="result-item" data-curriculums="{{item.curriculumsName}}" bindtap="onclick" wx:for="{{result}}" wx:key="index">{{item.txt}}
   </view>
 </view>
 

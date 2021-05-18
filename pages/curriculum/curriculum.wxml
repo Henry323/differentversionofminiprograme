@@ -1,2 +1,9 @@
 <!--pages/curriculum/curriculum.wxml-->
-<text>pages/curriculum/curriculum.wxml</text>
+<block wx:if="{{flag==1}}">
+<view class="showinfo">
+<view>curriculum code:<text></text></view>
+<view>choosetime:<text></text></view>
+<view>teacher:<text></text></view>
+
+</view>
+</block>

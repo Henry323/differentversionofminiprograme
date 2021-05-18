@@ -8,17 +8,34 @@ Page({
     // onPullDownRefresh: function () {
     //   wx.stopPullDownRefresh()
     // },
-    myinfo:null
+  
+      id:"",
+      name:"",
+      major:"",
+      email:""
+    
   
   },
- 
+ chickEdit:function(){
+  wx.navigateTo({
+    url: '../personalinfor/edid',
+    
+    })
+ },
+
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var stu = wx.getStorageSync('student');
-    this.setData({ myinfo: stu });
-    // console.log(this.data.myinfo);
+    var that = this
+  
+    that.setData({
+     
+      name:options.NameData,
+      major:options.MajorData,
+      email:options.EmailData
+    })
   },
   exit:function(e){
     wx.showModal({
@@ -49,5 +66,16 @@ resetpwd:function(e){
     wx.navigateTo({
       url: '../email/email?no=' + no,
     })
+  
+  },
+  inputbind:function(e){
+      console.log(e);
+      var v=e.detail.value;
+      this.setData({
+        id:v
+      });
+
   }
-})
+});
+
+

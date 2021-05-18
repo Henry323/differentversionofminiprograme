@@ -1,4 +1,5 @@
 <!--pages/personalinfor/personalinfor.wxml-->
+<!--pages/personalinfor/personalinfor.wxml-->
 <view class='content'>
   <view class='nav'>
     <view class='top'>
@@ -9,21 +10,26 @@
     </view>
   </view>
     <view class='item'>
-      <text class='left'>IDnum：</text><text class='right'>{{myinfo.no}}</text>
+      <text class='left'>IDnum：</text><text class='right'>{{id}}</text>
     </view>
+
     <view class='item'>
-      <text class='left'>Name：</text><text class='right'>{{myinfo.name}}</text>
+      <text class='left'>Name：</text><text class='right'>{{name}}</text>
     </view>
     
     <view class='item'>
-      <text class='left'>Major：</text><text class='right'>{{myinfo.departmentname}}</text>
+      <text class='left'>Major：</text><text class='right'>{{major}}</text>
     </view>
     <view class='item' bindtap='setemail'>
-     <text class='left'> E-mail：</text><text class='right' wx:if="{{myinfo.email==''|| myinfo.email==null}}">unbind</text><text class='right' wx:else>{{myinfo.email}}</text>
+     <text class='left'> E-mail：</text><text class='right'>{{email}}</text>
     </view>
-    <view class='item' bindtap='exit'>
-      <text class='left'>Logout：</text><text class='right'>>>></text>
-    </view>
-  
+   <button bindtap="chickEdit">edit</button>
+    
+
 </view>
+
+
+
+
+
 

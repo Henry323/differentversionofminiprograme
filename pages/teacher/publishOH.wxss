@@ -1,0 +1,45 @@
+/* pages/teacher/publishOH.wxss */
+.week{
+  border-bottom: 1px solid #f3f3f3;
+  zoom: 1;
+}
+.week_left{
+  float: left;
+  padding-top: 20rpx;
+}
+.week_day{
+  display: inline-block;
+  line-height: 40rpx;
+  vertical-align: middle;
+}
+.remove{
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 10rpx;
+  vertical-align: middle;
+}
+.week_right{
+  padding-left: 20rpx;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.week_right_one{
+  padding-left: 60rpx !important;
+}
+.time{
+  -webkit-text-fill-color: rgba(0,0,0,0.6);
+  -webkit-opacity: 1;
+  background: #fff;
+  color: rgba(0,0,0,0.6);
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  padding-left: 0rpx;
+  box-sizing: border-box;
+  border: none;
+  text-align: right;
+  height: 100rpx;
+  width: 190rpx;
+}

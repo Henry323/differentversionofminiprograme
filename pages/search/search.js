@@ -1,8 +1,10 @@
-const curriculums = require('./curriculums.js') //引入城市数组
+const majors = require('./curriculums.js') //引入城市数组
 Page({
   data: {
     hotcity: ["INT102", "CST102", "CST101", "CST107",  ],
-    result: []
+    result: [],
+    say: "",
+    curriculum:"",
   },
   /**
    * 搜索城市
@@ -17,12 +19,12 @@ Page({
       return
     }
     var result = []
-    curriculums.curriculums.forEach(item => {
-      item.curriculums.forEach(res => {
-        if (res.curriculums.indexOf(city) == 0) { //使用indexOf()=0 实现是否以...开头
+    majors.majors.forEach(zz => {
+      zz.curriculums.forEach(res => {
+        if (res.curriculumsName.indexOf(city) == 0) { //使用indexOf()=0 实现是否以...开头
           result.push({
-            citysName: res.curriculumsName,
-            txt: res.curriculumsName + "," + item.majorName,
+            curriculumsName: res.curriculumsName,
+            txt: zz.majorName + "," + res.curriculumsName,
           })
         }
 
@@ -31,17 +33,18 @@ Page({
     this.setData({
       result: result
     })
-  },
+    
+  }, 
   /**
    * 单击结果
    */
   onclick(e){
-    var city = e.currentTarget.dataset.curriculums
-    
-    wx.showToast({
-      icon: 'none',
-      title: curriculums,
+    var say = e.currentTarget.dataset.curriculums
+    console.log(say)
+    wx.navigateTo({
+      url: 'officehour?curriculum='+say,
     })
+    
   }
 })
 
