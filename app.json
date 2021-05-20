@@ -2,7 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/log/log",
-    "pages/home/home",
+    
 
     "pages/reservation/reservation",
     "pages/my/my",
@@ -30,29 +30,45 @@
     
 
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "自定义tabBar",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "custom": true,
+    "color": "#999999",
+    "selectedColor": "#333333",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+
+    
+    
     "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "search"
+      },
+      {
+        "pagePath": "pages/curriculum/curriculum",
+        "text": "curriculum"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "mine"
+      },
       {
         
         "pagePath": "pages/reservation/reservation",
-        "iconPath": "icon/curiculum1.png",
-        "selectedIconPath": "icon/curiculum.png",
         "text": "reservation"
       },
       {
         "pagePath": "pages/my/my",
-        "iconPath": "icon/mine1.png",
-        "selectedIconPath": "icon/mine.png",
         "text": "mine"
       }
   ]
   },
-  "style": "v2",
+  
   "sitemapLocation": "sitemap.json"
 }

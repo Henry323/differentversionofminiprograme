@@ -1,4 +1,5 @@
 // pages/reservation/reservation.js
+const app=getApp();
 Page({
 
   /**
@@ -26,7 +27,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    // 为了所有导航栏窗口都能同步导航状态，则在 onShow 中调用
+    app.setTabBar(this,3);
   },
 
   /**

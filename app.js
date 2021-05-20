@@ -1,19 +1,52 @@
 // app.js
 App({
-  onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+  globalData:{
+    tabBar: [
+        {
+          pagePath: "/pages/search/search",
+          iconPath: "/icon/search1.png",
+          selectedIconPath: "/icon/search.png",
+          text: "search"
+        },
+        {
+          pagePath: "/pages/curriculum/curriculum",
+          iconPath: "/icon/curiculum1.png",
+          selectedIconPath: "/icon/curiculum.png",
+          text: "curriculum"
+        },
+        {
+          pagePath: "/pages/mine/mine",
+          iconPath: "/icon/mine1.png",
+          selectedIconPath: "/icon/mine.png",
+          text: "mine"
+        },
+        {
+          
+          pagePath: "/pages/reservation/reservation",
+          iconPath: "/icon/curiculum1.png",
+          selectedIconPath: "/icon/curiculum.png",
+          text: "reservation"
+        },
+        {
+          pagePath: "/pages/my/my",
+          iconPath: "/pages/img/mine1.png",
+          selectedIconPath: "/pages/img/mine.png",
+          text: "mine"
+        }
+    ]
+    },
+    onLaunch: function () {
 
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+    },
+    
+    setTabBar(current,index = 0){
+      if (typeof current.getTabBar === 'function' && current.getTabBar()) {
+        current.getTabBar().setData({
+          list: this.globalData.tabBar,
+          selected: index
+        });
       }
-    })
-  },
-  globalData: {
-    userInfo: null
-  }
+     }
+  
+  
 })

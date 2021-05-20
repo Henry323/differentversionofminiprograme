@@ -18,3 +18,7 @@
 .chosen{
   color: blue;
 }
+.submit{
+  position:relative;
+  bottom: 0ch;
+}

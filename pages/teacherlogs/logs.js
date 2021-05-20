@@ -8,7 +8,7 @@ Page({
     username: '',
     password: '',
     ifsuccess: '',
-    num: 0,
+    
 
   },
   //事件处理函数
@@ -26,20 +26,22 @@ Page({
             method: 'post',
             data: {
               username: that.data.username,
-              password: that.data.password
+              password: that.data.password,
             },
             header:{'content-type':'application/x-www-form-urlencoded'},
             success:function(res){
               console.log("回调函数:"+res.data)
               var resData = res.data;
+  
               if(resData == true){
+              var num=1
                   wx.showToast({
                       title: '登录成功',
                       duration:2000
                   })
-                  this.setData({
-                    num:1
-                  })
+              
+ 
+                  
                   wx.navigateTo({ url: '../mine/mine?ifsuccess='+num });
               }else{
                   wx.showToast({

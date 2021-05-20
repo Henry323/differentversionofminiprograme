@@ -46,5 +46,9 @@ Page({
       url: '../logs/logs'
     })
   },
+  onShow: function () {
+    // 为了所有导航栏窗口都能同步导航状态，则在 onShow 中调用
+    app.setTabBar(this,4);
+  },
   
 })

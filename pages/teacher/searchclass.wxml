@@ -1,6 +1,6 @@
 <view class="search-box">
   <icon type="search" size="18" color="#0081ff"></icon>
-  <input bindinput="bindKeyInput" placeholder="Enter major name"></input>
+  <input bindinput="bindKeyInput" placeholder="Enter the course you teach"></input>
 </view>
 
 <view class="result-box">

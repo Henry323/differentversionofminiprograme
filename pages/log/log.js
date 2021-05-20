@@ -1,4 +1,4 @@
-// pages/log/log.js
+const app = getApp();
 Page({
 
   /**
@@ -62,5 +62,26 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  teacher(){
+    wx.switchTab({
+      url: '../reservation/reservation',
+    })
+    // 修改导航栏数据
+    app.globalData.tabBar[0].isHidden = true;
+    app.globalData.tabBar[1].isHidden = true;
+    app.globalData.tabBar[2].isHidden = true;
+    // 重新设置导航栏，达到更新导航栏的目的
+    app.setTabBar(this, 3);
+  },
+  student(){
+    wx.switchTab({
+      url: '../search/search',
+    })
+    // 修改导航栏数据
+    app.globalData.tabBar[3].isHidden = true;
+    app.globalData.tabBar[4].isHidden = true;
+    // 重新设置导航栏，达到更新导航栏的目的
+    app.setTabBar(this, 0);
+  },
 })

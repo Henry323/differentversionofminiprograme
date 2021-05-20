@@ -1,10 +1,15 @@
 const majors = require('./curriculums.js') //引入城市数组
+const app=getApp();
 Page({
   data: {
     hotcity: ["INT102", "CST102", "CST101", "CST107",  ],
     result: [],
     say: "",
     curriculum:"",
+  },
+  onShow: function () {
+   
+    app.setTabBar(this,0);
   },
   /**
    * 搜索城市
