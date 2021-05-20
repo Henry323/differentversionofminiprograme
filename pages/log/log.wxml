@@ -1,0 +1,11 @@
+<!--pages/log/log.wxml-->
+<view class='indexContext'>
+<view class='text'>
+<view bindtap="teacher" open-type="switchTab"><image class='avatar' src='../img/teacher.png'></image> </view>
+
+<text class='teacher'>I'm a teacher</text>
+
+<view bindtap="student" open-type="switchTab"><image class='avatar' src='../img/student.png'></image></view>
+<text class='teacher'>I'm a student</text>
+</view>
+</view>
