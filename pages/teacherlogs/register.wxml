@@ -1,0 +1,33 @@
+<view wx:if="{{!success}}">
+ <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input1' bindinput="handleInputPhone" placeholder="Enter phonenum" />
+            </view>
+          <button class='button' bindtap='doGetCode' disabled='{{disabled}}' style="background-color:{{color}}" >{{text}}</button>
+        </view>
+ <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input' bindinput="handleVerificationCode" placeholder="enter phonecode" />
+         </view>
+ 
+ </view>
+  <view class='row'>
+        <view class='info'>
+               <input type='password' class= 'info-input' bindinput="handleNewChanges" placeholder="enter password" />
+         </view>
+ 
+ </view>
+  <view class='row'>
+        <view class='info'>
+               <input  type='password' class= 'info-input' bindinput="handleNewChangesAgain" placeholder="confirm password" />
+         </view>
+ 
+ </view>
+ <button class='submit' bindtap='submit'>submit</button>
+ </view>
+ <view class = 'success' wx:if="{{success}}">
+ <view class='cheer'><icon type="success" size="24"/> registration successful!</view>
+ <button type = "default" class = 'return' bindtap='return_home'>返回首页</button>
+ </view>
+
+
