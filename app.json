@@ -1,0 +1,74 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/log/log",
+    
+
+    "pages/reservation/reservation",
+    "pages/my/my",
+    "pages/teacherlogs/logs",
+    "pages/teacherlogs/register",
+    "pages/teacherlogs/forgetpassword",
+    "pages/teacher/searchclass",
+    "pages/teacher/publishOH",
+    "pages/teachers/personainfo",
+    "pages/teachers/edit",
+
+    "pages/search/search",
+    "pages/search/officehour",
+    "pages/curriculum/curriculum",
+    "pages/mine/mine",
+    "pages/personalinfor/personalinfor",
+    "pages/personalinfor/edid",
+    "pages/logs/logs",
+    "pages/logs/register",
+    "pages/logs/forgetpassword"
+    
+    
+    
+    
+    
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "XJTLU OHA",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#999999",
+    "selectedColor": "#333333",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+
+    
+    
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "search"
+      },
+      {
+        "pagePath": "pages/curriculum/curriculum",
+        "text": "curriculum"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "mine"
+      },
+      {
+        
+        "pagePath": "pages/reservation/reservation",
+        "text": "reservation"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "mine"
+      }
+  ]
+  },
+  
+  "sitemapLocation": "sitemap.json"
+}
