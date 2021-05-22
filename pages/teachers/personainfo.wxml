@@ -1,0 +1,28 @@
+<view class='content'>
+  <view class='nav'>
+    <view class='top'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='nickname'>
+      <open-data type="userNickName"></open-data> 
+    </view>
+  </view>
+
+    <view class='item'>
+      <text class='left'>Name：</text><text class='right'>{{name}}</text>
+    </view>
+    
+    <view class='item'>
+      <text class='left'>Major1：</text><text class='right'>{{major1}}</text>
+    </view>
+    <view class='item'>
+      <text class='left'>Major2：</text><text class='right'>{{major2}}</text>
+    </view>
+    
+    <view class='item' bindtap='setemail'>
+     <text class='left'> E-mail：</text><text class='right'>{{email}}</text>
+    </view>
+   <button bindtap="chickEdit">edit</button>
+    
+
+</view>
