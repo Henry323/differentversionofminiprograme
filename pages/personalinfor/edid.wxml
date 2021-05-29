@@ -1,0 +1,17 @@
+<view class='item' >
+  <text class='left'>IDnum：</text>
+  <input type="number" bindinput="IDbind" class="right"></input>
+</view>
+<view class='item' >
+  <text class='left'>Name: </text>
+  <input type="number" bindinput="Namebind" class="right"></input>
+</view>
+<view class='item' >
+  <text class='left'>Major:</text>
+  <input type="number" bindinput="Majorbind" class="right"></input>
+</view>
+<view class='item' >
+  <text class='left'>Email: </text>
+  <input type="number" bindinput="Emailbind" class="right"></input>
+</view>
+<button bindtap="finishEdit">submit</button>

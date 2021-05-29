@@ -1,0 +1,15 @@
+<!--pages/reservation/reservation.wxml-->
+<block wx:if="{{listlen>0}}">
+<block wx:for="{{list}}" wx:for-item="item" wx:for-index="idx">
+  
+  <view class="showinfo">
+  <view>student phonenum<text>{{item[2]}}</text></view>
+  <view>curriculum code:<text>{{item[1]}}</text></view>
+  <view>choosetime:<text>{{item[0]}}</text></view>
+  
+
+</view>
+
+</block>
+
+</block>

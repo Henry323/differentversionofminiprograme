@@ -1,0 +1,13 @@
+<view class="hotcity-title" wx:if="{{result.length==0}}">
+  <view class="title-icon"></view>
+  <view class="title-txt">Teaching Classes</view>
+</view>
+<view class="hotcity-box">
+  <view class="hotcity-item" bindtap="onclick1">
+    {{major1}}
+  </view>
+
+  <view class="hotcity-item" bindtap="onclick2">
+    {{major2}}
+  </view>
+</view>

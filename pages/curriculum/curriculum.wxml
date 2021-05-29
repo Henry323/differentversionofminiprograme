@@ -1,0 +1,17 @@
+<!--pages/curriculum/curriculum.wxml-->
+
+
+
+<block wx:if="{{listlen>0}}">
+<block wx:for="{{appointmentinfo}}" wx:for-item="item" wx:for-index="idx">
+  
+  <view class="showinfo">
+  <view>curriculum code:<text>{{item[1]}}</text></view>
+  <view>choosetime:<text>{{item[0]}}</text></view>
+  <view>teacher:<text>{{item[2]}}</text></view>
+
+</view>
+
+</block>
+
+</block>

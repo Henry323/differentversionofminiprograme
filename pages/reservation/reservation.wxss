@@ -1,0 +1,6 @@
+/* pages/reservation/reservation.wxss *//* pages/curriculum/curriculum.wxss */
+.showinfo{
+  border: 3rpx solid #000000;
+  height: 250rpx;
+  margin: 10 auto;
+}

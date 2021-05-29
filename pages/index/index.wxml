@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class='indexContext'>
+<image class='avatar' src='../img/4.png'></image>
+
+<text class='userName'>XJTLU OHA </text>
+<view class='text'>
+
+<navigator url="../log/log"><text>BEGIN</text></navigator>
+</view>
+</view>
